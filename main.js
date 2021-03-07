@@ -1,4 +1,22 @@
-var dogBreed = document.querySelector('select').value;
+var selector = document.querySelector('select');
+var dogBreed = selector.value;
+
+var selectChange = function(e) {
+		dogBreed = e.target.value;
+}
+
+function requestHttp() {
+  var req = new XMLHttpRequest();
+  req.open("GET", "https://dog.ceo/api/breed/" + dogBreed + "/images/random");
+	req.onload = function () {
+		console.log(req);
+	}
+  req.send();
+
+}
+
+selector.addEventListener('change', selectChange);
+
 
 // var addObject = function (parentNode, imageSrc, movTitle) {
 // 	var divElem = document.createElement('div');
