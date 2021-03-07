@@ -28,15 +28,10 @@ main {
 	background-image: linear-gradient(0deg, lavender, transparent);
 }
 
-h1, h2 {
+h1 {
 	margin: 20px 50px;
 	padding: 5px 15px;
 	border-bottom: 2px solid black;
-}
-
-h2 {
-	border: none;
-	text-align: center;
 }
 
 img {

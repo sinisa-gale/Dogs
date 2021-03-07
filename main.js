@@ -1,3 +1,5 @@
+var dogBreed = document.querySelector('select').value;
+
 // var addObject = function (parentNode, imageSrc, movTitle) {
 // 	var divElem = document.createElement('div');
 // 	divElem.innerHTML = '<img src="./img/' + imageSrc +
